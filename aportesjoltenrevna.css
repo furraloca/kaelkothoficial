@@ -2072,7 +2072,7 @@ font-display: swap;
 
 .KA-perg-lacre-interactivo {
     position: absolute;
-    top: 110px; 
+    top: 100px; 
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 10;
