@@ -1861,3 +1861,185 @@ font-display: swap;
   font-size: 22px;
   margin-right: 5px;
 }
+
+/* --- TORRE DE CUERVOS Y MISIVAS --- */
+
+/** TORRE DE CUERVOS **/
+.Ka-torrecuervos{
+    width: 500px;
+    margin: 40px auto 0px auto;
+    background: url(https://i.imgur.com/IPslpYw.jpeg) center center / cover no-repeat;
+    border: 2px solid #181818;
+    padding: 40px 35px;
+    position: relative;
+    box-sizing: border-box;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.8);
+}
+
+.Ka-torrecuervos::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: grayscale(100%) brightness(65%) contrast(94%);
+    -webkit-backdrop-filter: grayscale(100%) brightness(65%) contrast(94%);
+    background-color: rgba(10, 10, 10, 0.7);
+    mix-blend-mode: multiply;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.Ka-torrecuervos-cuervo {
+    position: absolute;
+    top: -60px;
+    right: -45px;
+    width: 240px;
+    filter: grayscale(100%) contrast(120%) brightness(50%) 
+            drop-shadow(0 0 1px #000) 
+            drop-shadow(-5px 5px 8px rgba(0,0,0,0.9)) 
+            drop-shadow(0 0 6px rgba(76, 114, 100, 0.65));
+    pointer-events: none;
+    z-index: 5; 
+    transition: all 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.Ka-torrecuervos:hover .Ka-torrecuervos-cuervo {
+    filter: grayscale(30%) contrast(120%) brightness(60%) 
+            drop-shadow(0 0 1.5px #000) 
+            drop-shadow(-8px 8px 12px rgba(0,0,0,0.8)) 
+            drop-shadow(0 0 14px rgba(76, 114, 100, 0.95));
+    transform: scale(1.03) rotate(-1deg) translateY(-3px);
+}
+
+.Ka-torrecuervos-tit {
+    width: 65%;
+    margin-bottom: 35px;
+    position: relative;
+    z-index: 2;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.8);
+}
+
+.Ka-torrecuervos-tit t {
+    display: block;
+    font-family: "Highborne";
+    color: transparent;
+    -webkit-text-stroke: .5px #4c7264;
+    text-shadow: 1px 1px 0px #abaaaa, 0px 2px 5px #000;
+    font-size: 34px;
+    line-height: 110%;
+    margin-bottom: 8px;
+}
+
+.Ka-torrecuervos-tit span {
+    display: block;
+    font-family: "Gideon Roman", serif;
+    font-size: 9.5px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #abaaaa;
+    line-height: 140%;
+}
+
+.Ka-torrecuervos-box {
+    position: relative;
+    z-index: 2;
+    background: rgba(8, 8, 8, 0.45);
+    border: 1px solid rgba(20, 20, 20, 0.6);
+    padding: 30px 25px 25px 25px;
+    box-sizing: border-box;
+    box-shadow: inset 0 0 15px rgba(0,0,0,0.6);
+}
+
+.Ka-torrecuervos-ins {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.Ka-torrecuervos-ins .linea {
+    height: 1px;
+    flex-grow: 1;
+    background: linear-gradient(to right, transparent, #252525, transparent);
+}
+
+.Ka-torrecuervos-ins .grimorio-tit {
+    font-family: "Fondamento", cursive;
+    font-size: 14px;
+    color: #4c7264;
+    font-style: italic;
+    letter-spacing: 0.5px;
+}
+
+.Ka-torrecuervos-box p {
+    font-family: "Gideon Roman", serif;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #a3a3a3;
+    line-height: 175%;
+    text-align: justify;
+    letter-spacing: 0.5px;
+    margin: 0 0 15px 0;
+    text-shadow: 1px 1px 2px #000;
+}
+
+.Ka-torrecuervos-quote {
+    margin: 25px 0;
+    padding: 0;
+    font-family: "Fondamento", cursive;
+    font-style: italic;
+    font-size: 16px;
+    color: #4c7264;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8), 0px 0px 4px rgba(76, 114, 100, 0.2);
+    text-align: center;
+    line-height: 140%;
+    border: none;
+}
+
+.Ka-torrecuervos-ran {
+    width: 100%;
+    padding: 15px 0;
+    background: rgba(5, 5, 5, 0.7);
+    border: 1px solid #161616;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0 0 15px rgba(0,0,0,0.9);
+    transition: all 0.4s ease;
+}
+
+.Ka-torrocuervos-icon {
+    font-size: 22px;
+    color: #444;
+    margin-bottom: 6px;
+    transition: all 0.4s ease;
+}
+
+.Ka-torrecuervos-ran-text {
+    font-family: "Gideon Roman", serif;
+    font-size: 8px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    color: #777;
+    transition: all 0.4s ease;
+}
+
+.Ka-torrecuervos-ran:hover {
+    border-color: #4c7264;
+    background: rgba(11, 16, 14, 0.85);
+}
+
+.Ka-torrecuervos-ran:hover .Ka-torrocuervos-icon {
+    color: #4c7264;
+    transform: scale(1.15) rotate(-5deg);
+    text-shadow: 0 0 8px rgba(76, 114, 100, 0.8);
+}
+
+.Ka-torrecuervos-ran:hover .Ka-torrecuervos-ran-text {
+    color: #abaaaa;
+    text-shadow: 0 0 6px rgba(255, 255, 255, 0.2);
+}
