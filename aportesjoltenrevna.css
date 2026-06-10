@@ -16,6 +16,17 @@ font-style: normal;
 font-display: swap;
 }
 
+@font-face {
+    font-family: 'Vicentino';
+    src: url('https://hartrp.github.io/kaelkoth/fonts/1522-Vicentino-W01-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Highborne';
+    src: url('https://furraloca.github.io/kaelkothoficial/Highborne-Blackletter.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 /* --- MODELOS DE FIRMAS --- */
 
