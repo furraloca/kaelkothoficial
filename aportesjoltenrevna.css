@@ -2030,15 +2030,14 @@ font-display: swap;
 }
 
 .Ka-torrecuervos-ran:hover {
-    border-color: var(--groups); /* Modificado */
-    /* Mezcla un 10% del color del grupo con el fondo oscuro para mantener la estética */
-    background: color-mix(in srgb, var(--groups) 10%, rgba(5, 5, 5, 0.85)); /* Modificado */
+    border-color: var(--groups); 
+    background: color-mix(in srgb, var(--groups) 10%, rgba(5, 5, 5, 0.85)); 
 }
 
 .Ka-torrecuervos-ran:hover .Ka-torrecuervos-icon {
     color: var(--groups); /* Modificado */
     transform: scale(1.15) rotate(-5deg);
-    text-shadow: 0 0 8px rgb(from var(--groups) r g b / 0.8); /* Modificado */
+    text-shadow: 0 0 8px rgb(from var(--groups) r g b / 0.8); 
 }
 
 .Ka-torrecuervos-ran:hover .Ka-torrecuervos-ran-text {
@@ -2149,7 +2148,7 @@ font-display: swap;
 .KA-perg-checkbox-lacre:checked ~ .KA-perg-pergamino .KA-perg-contocult {
     opacity: 1;
     transition: opacity 0.8s ease 0.6s; 
-    padding-bottom: 50px; 
+    padding-bottom: 80px; 
 }
 
 .KA-perg-checkbox-lacre:checked ~ .KA-perg-lacre-interactivo {
