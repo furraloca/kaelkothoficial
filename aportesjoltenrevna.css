@@ -2033,7 +2033,7 @@ font-display: swap;
     background: rgba(11, 16, 14, 0.85);
 }
 
-.Ka-torrecuervos-ran:hover .Ka-torrocuervos-icon {
+.Ka-torrecuervos-ran:hover .Ka-torrecuervos-icon {
     color: #4c7264;
     transform: scale(1.15) rotate(-5deg);
     text-shadow: 0 0 8px rgba(76, 114, 100, 0.8);
