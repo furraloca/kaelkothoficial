@@ -1865,6 +1865,7 @@ font-display: swap;
 /* --- TORRE DE CUERVOS Y MISIVAS --- */
 
 /** TORRE DE CUERVOS **/
+/** TORRE DE CUERVOS **/
 .Ka-torrecuervos{
     width: 500px;
     margin: 40px auto 0px auto;
@@ -1899,7 +1900,7 @@ font-display: swap;
     filter: grayscale(100%) contrast(120%) brightness(50%) 
             drop-shadow(0 0 1px #000) 
             drop-shadow(-5px 5px 8px rgba(0,0,0,0.9)) 
-            drop-shadow(0 0 6px rgba(76, 114, 100, 0.65));
+            drop-shadow(0 0 6px rgb(from var(--groups) r g b / 0.65)); /* Modificado */
     pointer-events: none;
     z-index: 5; 
     transition: all 0.6s cubic-bezier(0.25, 1, 0.5, 1);
@@ -1909,7 +1910,7 @@ font-display: swap;
     filter: grayscale(30%) contrast(120%) brightness(60%) 
             drop-shadow(0 0 1.5px #000) 
             drop-shadow(-8px 8px 12px rgba(0,0,0,0.8)) 
-            drop-shadow(0 0 14px rgba(76, 114, 100, 0.95));
+            drop-shadow(0 0 14px rgb(from var(--groups) r g b / 0.95)); /* Modificado */
     transform: scale(1.03) rotate(-1deg) translateY(-3px);
 }
 
@@ -1925,7 +1926,7 @@ font-display: swap;
     display: block;
     font-family: "Highborne";
     color: transparent;
-    -webkit-text-stroke: .5px #4c7264;
+    -webkit-text-stroke: .5px var(--groups); /* Modificado */
     text-shadow: 1px 1px 0px #abaaaa, 0px 2px 5px #000;
     font-size: 34px;
     line-height: 110%;
@@ -1968,7 +1969,7 @@ font-display: swap;
 .Ka-torrecuervos-ins .grimorio-tit {
     font-family: "Gideon Roman", cursive;
     font-size: 14px;
-    color: #4c7264;
+    color: var(--groups); /* Modificado */
     font-style: italic;
     letter-spacing: 0.5px;
 }
@@ -1991,8 +1992,8 @@ font-display: swap;
     font-family: "Gideon Roman", serif;
     font-style: italic;
     font-size: 16px;
-    color: #4c7264;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8), 0px 0px 4px rgba(76, 114, 100, 0.2);
+    color: var(--groups); /* Modificado */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8), 0px 0px 4px rgb(from var(--groups) r g b / 0.2); /* Modificado */
     text-align: center;
     line-height: 140%;
     border: none;
@@ -2029,17 +2030,19 @@ font-display: swap;
 }
 
 .Ka-torrecuervos-ran:hover {
-    border-color: #4c7264;
-    background: rgba(11, 16, 14, 0.85);
+    border-color: var(--groups); /* Modificado */
+    /* Mezcla un 10% del color del grupo con el fondo oscuro para mantener la estética */
+    background: color-mix(in srgb, var(--groups) 10%, rgba(5, 5, 5, 0.85)); /* Modificado */
 }
 
 .Ka-torrecuervos-ran:hover .Ka-torrecuervos-icon {
-    color: #4c7264;
+    color: var(--groups); /* Modificado */
     transform: scale(1.15) rotate(-5deg);
-    text-shadow: 0 0 8px rgba(76, 114, 100, 0.8);
+    text-shadow: 0 0 8px rgb(from var(--groups) r g b / 0.8); /* Modificado */
 }
 
 .Ka-torrecuervos-ran:hover .Ka-torrecuervos-ran-text {
     color: #abaaaa;
     text-shadow: 0 0 6px rgba(255, 255, 255, 0.2);
 }
+
