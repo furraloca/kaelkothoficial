@@ -2256,7 +2256,7 @@ font-display: swap;
     width: 350px; 
     font-family: 'Highborne'; 
     color: transparent; 
-    -webkit-text-stroke: .5px #4c7264; 
+    -webkit-text-stroke: .5px var(--groups);
     text-shadow: 1px 1px 0px #abaaaa; 
     font-size: 32px; 
     letter-spacing: 0px; 
