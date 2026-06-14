@@ -2416,12 +2416,12 @@ font-display: swap;
     background: #0d0d0d; 
     border: 1px solid var(--groups); 
     color: #888; 
-    font-family: "Cinzel", serif; 
-    font-size: 0.6em; 
+    font-family: "Cinzel"; 
+    font-size: 0.5em; 
     text-transform: uppercase; 
-    padding: 1px 4px; 
-    border-radius: 3px;
-    line-height: 1; 
+    padding: 2px 4px; 
+    border-radius: 1px;
+    line-height: 1.1; 
 }
 
 .KA_rl_char_desc {
