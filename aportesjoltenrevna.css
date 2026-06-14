@@ -2402,26 +2402,26 @@ font-display: swap;
     text-shadow: 1px 1px 2px #000;
 }
 
-.KA_rl_char_tags {
-    display: flex;
-    justify-content: center;
-    gap: 3px;
-    margin-bottom: 10px;
+
+.KA_rl_char_tags { 
+    display: flex; 
+    gap: 4px; 
+    margin-top: 2px; 
+    margin-bottom: 5px; 
     flex-wrap: wrap; 
-    width: 100%;     
+    justify-content: center;
 }
 
-.KA_rl_char_tags span {
-    font-family: "Gideon Roman", serif; 
-    font-size: 8px; 
-    text-transform: uppercase; 
-    background: rgba(0, 0, 0, 0.6); 
+.KA_rl_char_tags span { 
+    background: #0d0d0d; 
     border: 1px solid var(--groups); 
-    padding: 2px 2px; 
-    color: #abaaaa;
-    display: inline-block;
-    max-width: 130px; 
-    word-wrap: break-word; 
+    color: #888; 
+    font-family: "Cinzel", serif; 
+    font-size: 0.6em; 
+    text-transform: uppercase; 
+    padding: 1px 4px; 
+    border-radius: 3px;
+    line-height: 1; 
 }
 
 .KA_rl_char_desc {
