@@ -2407,7 +2407,8 @@ font-display: swap;
     justify-content: center;
     gap: 4px;
     margin-bottom: 10px;
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
+    width: 100%;     
 }
 
 .KA_rl_char_tags span {
@@ -2415,9 +2416,12 @@ font-display: swap;
     font-size: 8px; 
     text-transform: uppercase; 
     background: rgba(0, 0, 0, 0.6); 
-    border: 1px solid #333; 
-    padding: 3px 6px; 
-    color: #abaaaa; 
+    border: 1px solid var(--groups); 
+    padding: 2px 5px; 
+    color: #abaaaa;
+    display: inline-block;
+    max-width: 130px; 
+    word-wrap: break-word; 
 }
 
 .KA_rl_char_desc {
