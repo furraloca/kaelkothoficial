@@ -2405,7 +2405,7 @@ font-display: swap;
 .KA_rl_char_tags {
     display: flex;
     justify-content: center;
-    gap: 4px;
+    gap: 3px;
     margin-bottom: 10px;
     flex-wrap: wrap; 
     width: 100%;     
@@ -2417,7 +2417,7 @@ font-display: swap;
     text-transform: uppercase; 
     background: rgba(0, 0, 0, 0.6); 
     border: 1px solid var(--groups); 
-    padding: 2px 5px; 
+    padding: 2px 2px; 
     color: #abaaaa;
     display: inline-block;
     max-width: 130px; 
