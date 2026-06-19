@@ -857,7 +857,7 @@ font-display: swap;
 }
 
 .KA-sig4v2:hover .KA-sig4v2-quote{
-  transform: translateX(-240px);
+  transform: translateX(-280px);
   transition: all ease-in-out 0.7s;
 }
 
