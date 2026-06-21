@@ -2141,24 +2141,28 @@ font-display: swap;
     transition: opacity 0.5s ease;
 }
 
-.KA-perg-checkbox-lacre:checked ~ .KA-perg-pergamino .KA-perg-animacion-altura {
-    grid-template-rows: 1fr;
+.KA-perg-control .KA-perg-checkbox-lacre:checked ~ .KA-perg-pergamino .KA-perg-animacion-altura
+{
+    grid-template-rows:1fr;
 }
 
-.KA-perg-checkbox-lacre:checked ~ .KA-perg-pergamino .KA-perg-contocult {
-    opacity: 1;
-    transition: opacity 0.8s ease 0.6s; 
-    padding-bottom: 80px; 
+.KA-perg-control .KA-perg-checkbox-lacre:checked ~ .KA-perg-pergamino .KA-perg-contocult
+{
+    opacity:1;
+    transition:opacity .8s ease .6s;
+    padding-bottom:25px;
 }
 
-.KA-perg-checkbox-lacre:checked ~ .KA-perg-lacre-interactivo {
-    opacity: 0;
-    pointer-events: none;
-    transform: translate(-50%, 50px) scale(1.2); 
+.KA-perg-control .KA-perg-checkbox-lacre:checked ~ .KA-perg-lacre-interactivo
+{
+    opacity:0;
+    pointer-events:none;
+    transform:translate(-50%,50px) scale(1.2);
 }
 
-.KA-perg-checkbox-lacre:checked ~ .KA-perg-sombra-corte {
-    opacity: 0;
+.KA-perg-control .KA-perg-checkbox-lacre:checked ~ .KA-perg-sombra-corte
+{
+    opacity:0;
 }
 
 .KA-perg-cuerpo {
@@ -2207,10 +2211,11 @@ font-display: swap;
     pointer-events: none; 
 }
 
-.KA-perg-checkbox-lacre:checked ~ .KA-perg-pergamino .KA-perg-contenedor-cierre {
-    opacity: 1;
-    pointer-events: auto;
-    transition: opacity 0.8s ease 0.6s;
+.KA-perg-control .KA-perg-checkbox-lacre:checked ~ .KA-perg-pergamino .KA-perg-contenedor-cierre
+{
+    opacity:1;
+    pointer-events:auto;
+    transition:opacity .8s ease .6s;
 }
 
 .KA-perg-lacre-cerrar {
@@ -2232,6 +2237,17 @@ font-display: swap;
 
 .KA-perg-lacre-cerrar:hover .KA-perg-lacre-texto {
     opacity: 1;
+}
+.KA-perg-control{
+    display:block;
+    position:relative;
+    cursor:pointer;
+}
+
+.KA-perg-checkbox-lacre{
+    position:absolute;
+    opacity:0;
+    pointer-events:none;
 }
 
 /* --- RELACIONES --- */
