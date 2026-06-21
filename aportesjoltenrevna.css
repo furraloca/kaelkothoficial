@@ -2053,8 +2053,18 @@ font-display: swap;
     margin: 0px auto 40px auto;
 }
 
+.KA-perg-control {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+}
+
 .KA-perg-checkbox-lacre { 
-    display: none; 
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
 }
 
 .KA-perg-sombra-corte {
@@ -2072,7 +2082,7 @@ font-display: swap;
 
 .KA-perg-lacre-interactivo {
     position: absolute;
-    top: 100px; 
+    top: 110px; /* Alineado correctamente con la sombra del corte */
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 10;
@@ -2141,29 +2151,39 @@ font-display: swap;
     transition: opacity 0.5s ease;
 }
 
-.KA-perg-control .KA-perg-checkbox-lacre:checked ~ .KA-perg-pergamino .KA-perg-animacion-altura
-{
-    grid-template-rows:1fr;
+/* ====================================================
+   ESTADOS ACTIVOS (AL HACER CLIC EN EL PERGAMINO)
+   ==================================================== */
+
+.KA-perg-control .KA-perg-checkbox-lacre:checked ~ .KA-perg-pergamino .KA-perg-animacion-altura {
+    grid-template-rows: 1fr;
 }
 
-.KA-perg-control .KA-perg-checkbox-lacre:checked ~ .KA-perg-pergamino .KA-perg-contocult
-{
-    opacity:1;
-    transition:opacity .8s ease .6s;
-    padding-bottom:25px;
+.KA-perg-control .KA-perg-checkbox-lacre:checked ~ .KA-perg-pergamino .KA-perg-contocult {
+    opacity: 1;
+    transition: opacity 0.8s ease 0.6s; 
+    padding-bottom: 25px; 
 }
 
-.KA-perg-control .KA-perg-checkbox-lacre:checked ~ .KA-perg-lacre-interactivo
-{
-    opacity:0;
-    pointer-events:none;
-    transform:translate(-50%,50px) scale(1.2);
+.KA-perg-control .KA-perg-checkbox-lacre:checked ~ .KA-perg-lacre-interactivo {
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, 50px) scale(1.2); 
 }
 
-.KA-perg-control .KA-perg-checkbox-lacre:checked ~ .KA-perg-sombra-corte
-{
-    opacity:0;
+.KA-perg-control .KA-perg-checkbox-lacre:checked ~ .KA-perg-sombra-corte {
+    opacity: 0;
 }
+
+.KA-perg-control .KA-perg-checkbox-lacre:checked ~ .KA-perg-pergamino .KA-perg-contenedor-cierre {
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 0.8s ease 0.6s;
+}
+
+/* ====================================================
+   TEXTOS Y CONTENIDO INTERIOR
+   ==================================================== */
 
 .KA-perg-cuerpo {
     font-family: 'Vicentino', cursive;
@@ -2200,6 +2220,10 @@ font-display: swap;
     color: #2b2b2b;
 }
 
+/* ====================================================
+   BOTÓN DE CIERRE (VOLVER A ENROLLAR)
+   ==================================================== */
+
 .KA-perg-contenedor-cierre {
     position: absolute;
     bottom: 20px; 
@@ -2209,13 +2233,6 @@ font-display: swap;
     text-align: center;
     opacity: 0;
     pointer-events: none; 
-}
-
-.KA-perg-control .KA-perg-checkbox-lacre:checked ~ .KA-perg-pergamino .KA-perg-contenedor-cierre
-{
-    opacity:1;
-    pointer-events:auto;
-    transition:opacity .8s ease .6s;
 }
 
 .KA-perg-lacre-cerrar {
@@ -2237,17 +2254,6 @@ font-display: swap;
 
 .KA-perg-lacre-cerrar:hover .KA-perg-lacre-texto {
     opacity: 1;
-}
-.KA-perg-control{
-    display:block;
-    position:relative;
-    cursor:pointer;
-}
-
-.KA-perg-checkbox-lacre{
-    position:absolute;
-    opacity:0;
-    pointer-events:none;
 }
 
 /* --- RELACIONES --- */
