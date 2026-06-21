@@ -2151,10 +2151,6 @@ font-display: swap;
     transition: opacity 0.5s ease;
 }
 
-/* ====================================================
-   ESTADOS ACTIVOS (AL HACER CLIC EN EL PERGAMINO)
-   ==================================================== */
-
 .KA-perg-control .KA-perg-checkbox-lacre:checked ~ .KA-perg-pergamino .KA-perg-animacion-altura {
     grid-template-rows: 1fr;
 }
@@ -2180,10 +2176,6 @@ font-display: swap;
     pointer-events: auto;
     transition: opacity 0.8s ease 0.6s;
 }
-
-/* ====================================================
-   TEXTOS Y CONTENIDO INTERIOR
-   ==================================================== */
 
 .KA-perg-cuerpo {
     font-family: 'Vicentino', cursive;
@@ -2219,10 +2211,6 @@ font-display: swap;
     font-size: 28px;
     color: #2b2b2b;
 }
-
-/* ====================================================
-   BOTÓN DE CIERRE (VOLVER A ENROLLAR)
-   ==================================================== */
 
 .KA-perg-contenedor-cierre {
     position: absolute;
