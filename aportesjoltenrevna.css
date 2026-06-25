@@ -3698,11 +3698,11 @@ font-display: swap;
 /* Y esto asegura que tu reproductor esté por encima de absolutamente TODO */
 .reproductor-mini {
   position: relative !important;
-  z-index: 99999 !important;
+  z-index: 90 !important;
   pointer-events: auto !important;
 }
 .control-btn {
   position: relative !important;
-  z-index: 999999 !important;
+  z-index: 90 !important;
   pointer-events: auto !important;
 }
